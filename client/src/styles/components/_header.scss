@@ -1,0 +1,56 @@
+.thenav {
+  .logo-block {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    left: 0;
+    .logo {
+      height: 50px;
+		  width: 80px;
+      @media screen and (max-width: 900px) {
+        height: 47px;
+        width: 60px;
+      }
+      @media screen and (max-width: 600px) {
+        height: 40px;
+        width: 55px;
+      }
+      @media screen and (max-width: 300px) {
+        height: 30px;
+        width: 40px;
+      }
+    }
+    .title-logo {
+      font-family: $charm;
+      margin-top: 10px;
+      margin-left: 10px;
+      font-size: $h2-font-size;
+      color: $color_5;
+      @media screen and (max-width: 600px) {
+        font-size: 1.15rem;
+      }
+      @media screen and (max-width: 300px) {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  .search-btn {
+    border: 1px solid $color_5;
+    border-radius: 30%;
+  }
+  .signin-btn {
+    border-radius: 10px;
+    padding: 2px !important;
+    background: $container-color;
+    border: 1px solid $color_5;
+    color: $color_5;
+  }
+  .toggle {
+    color: $color_5;
+  }
+  .menu {
+    .nav-active {
+        color: $color_5;
+      }
+  }
+}
