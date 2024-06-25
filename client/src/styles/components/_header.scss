@@ -41,9 +41,15 @@
   .signin-btn {
     border-radius: 10px;
     padding: 2px !important;
-    background: $container-color;
+    background: $container-color !important;
     border: 1px solid $color_5;
+    font-size: 7.5rem !important;
     color: $color_5;
+    &:hover{
+      background: $color_5 !important;
+      color: $color_10;
+      font-size: 7.5rem !important;
+    }
   }
   .toggle {
     color: $color_5;
