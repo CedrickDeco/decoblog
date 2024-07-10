@@ -11,7 +11,7 @@ export default function Header() {
         <span>
           <img src="./img/logo-without-bg.png" className='logo' alt="logo-without-bg" />
         </span>
-        <div className="title-logo dark:text-white">DecoBlog</div>
+        <div className="title-logo dark:text-white" >DecoBlog</div>
       </NavLink>
       <form>
         <TextInput
