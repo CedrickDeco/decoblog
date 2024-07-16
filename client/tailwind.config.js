@@ -11,6 +11,7 @@ export default {
       colors: {
         colblue: '#1DA1E5',
         colyellow: '#E6EB2E',
+        colblack: '#000',
         overlay: '#00000054',
       },
       fontSize: {
