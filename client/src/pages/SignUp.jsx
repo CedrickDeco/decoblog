@@ -51,7 +51,7 @@ export default function SignUp() {
             </span>
             <div className="title-logo dark:text-white">DecoBlog</div>
           </NavLink>
-          <p className='text-sm mt-5' >This is blog project. You can sign in with your email and password or with Google.</p>
+          <p className='text-sm mt-5' >This is blog project. You can sign up with your email and password or with Google.</p>
         </div>
         <div className='flex-1'>
           <form className='flex flex-col gap-4' onSubmit={handleSubmit}>
@@ -102,7 +102,7 @@ export default function SignUp() {
           </form>
           <div className='flex gap-2 text-sm mt-5'>
             <span>Have an account?</span>
-            <NavLink to='/signin' className='text-blue-500'>
+            <NavLink to='/signin' className='text-colblue'>
               Sign In
             </NavLink>
           </div>
