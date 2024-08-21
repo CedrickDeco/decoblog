@@ -47,7 +47,7 @@ export default function SignIn() {
       // setLoading(false);
       if (res.ok) {
         dispatch(signInSuccess(data));
-        navigate('/');
+        navigate('/')
       }
     } catch (error) {
       // setLoading(false);

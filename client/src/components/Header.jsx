@@ -5,6 +5,7 @@ import { AiOutlineSearch } from 'react-icons/ai'
 import { FaMoon } from 'react-icons/fa'
 
 export default function Header() {
+
   return (
     <Navbar className='thenav border-b-2' >
       <NavLink to='/' className='text-sm sm:text-xl logo-block' >
@@ -28,7 +29,7 @@ export default function Header() {
         <Button className='w-12 h-10 hidden sm:inline search-btn' color='gray' >
           <FaMoon />
         </Button>
-        <NavLink>
+        <NavLink to='/signin'>
           <Button className='signin-btn' >
             Sign In
           </Button>
