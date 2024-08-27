@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }))
 connectDb()
 
 //Routes
-// app.use('/api/user', userRoutes)
+app.use('/api/user', userRoutes)
 app.use('/api/auth', authRoute)
 
 //Start the server
