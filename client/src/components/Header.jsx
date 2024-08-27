@@ -2,14 +2,16 @@ import React from 'react'
 import { Avatar, Button, Dropdown, Navbar, TextInput } from 'flowbite-react'
 import { Link, NavLink } from 'react-router-dom'
 import { AiOutlineSearch } from 'react-icons/ai'
-import { FaMoon } from 'react-icons/fa'
+import { FaMoon, FaSun } from 'react-icons/fa'
 import { useDispatch, useSelector } from 'react-redux'
 import { signoutSuccess } from '../redux/user/userSlice';
+import { toggleTheme } from '../redux/theme/themeSlice';
 
 export default function Header() {
 
   const { currentUser } = useSelector((state) => state.user);
   const dispatch = useDispatch();
+  const { theme } = useSelector((state) => state.theme);
 
 
   const handleSignout = async () => {
@@ -48,8 +50,12 @@ export default function Header() {
         <AiOutlineSearch className='text-sicon text-colblue' />
       </Button>
       <div className="flex gap-2 md:order-2">
-        <Button className='w-12 h-10 hidden sm:inline search-btn' color='gray' >
-          <FaMoon />
+        <Button
+          className='w-12 h-10 hidden sm:inline search-btn'
+          color='gray'
+          onClick={() => dispatch(toggleTheme())}
+        >
+          {theme === 'light' ? <FaSun /> : <FaMoon />}
         </Button>
         {currentUser ? (
           <Dropdown
